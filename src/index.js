@@ -3,10 +3,17 @@ import ReactDOM from "react-dom";
 import CommentDetail from "./CommentDetail";
 import faker from "faker";
 import ApprovalCard from "./ApprovalCard";
+import './App.css'
 
 const App = () => {
     return (
         <div className="ui container comments">
+            <ApprovalCard>
+                <div>
+                    <h4>Warning?</h4>
+                    Are you sure you want to do this?
+                </div>
+            </ApprovalCard>
             <ApprovalCard>
                <CommentDetail author="Sam" timeAgo="Today at 4:45PM" comment="Some Comment" image={faker.image.image()}/> 
             </ApprovalCard>
